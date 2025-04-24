@@ -23,4 +23,8 @@ public class MyHomeController {
     public String otrov2() {
         return "Esta es Otra V2";
     }
+    @GetMapping("/api/valor2")
+    public String valor2(@RequestParam int num1) {
+        return "El valor ingresado es " + num1;
+    }
 }
